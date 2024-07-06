@@ -140,8 +140,13 @@ p {
 .nav__link {
   font-size: 1rem;
   color: black;
+  transition: 0.25s;
 }
 .nav__link--active {
+  border-bottom: 4px solid #DB7A4E;
+  padding-bottom: 0.5rem;
+}
+.nav__link:hover {
   border-bottom: 4px solid #DB7A4E;
   padding-bottom: 0.5rem;
 }

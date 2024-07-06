@@ -110,9 +110,15 @@ p {
     &__link {
         font-size: 1rem;
         color: $colour-black;
+        transition: 0.25s;
 
         &--active {
             border-bottom: 4px solid $colour-orange;
+            padding-bottom: 0.5rem;
+        }
+
+        &:hover {
+            border-bottom: 4px solid #DB7A4E;
             padding-bottom: 0.5rem;
         }
     }
