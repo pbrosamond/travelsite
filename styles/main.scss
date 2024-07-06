@@ -11,15 +11,31 @@
     justify-content: space-around;
     align-items: center;
 
+    @include tablet {
+        flex-direction: column-reverse; 
+        padding: 8rem 10rem 5rem;   
+        text-align: center;
+    }
+
     &__container {
         width: 34%;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+
+        @include tablet {
+            width: 100%;
+            align-items: center;
+        }
+
     }
 
     &__image {
         height: 20rem;
+
+        @include tablet {
+            height: 10rem;
+        }
     }
 }
 
@@ -29,21 +45,38 @@
     flex-direction: column;
     gap: 2rem;
     background-color: #F7F7F7;
+
+    @include tablet {
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 1rem;
+    }
     
         &__container {
             display: flex;
             justify-content: center;
             gap: 3rem;
             width: 100%;
+
+            @include tablet {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         
         &__card {
             width: 23%;
+            min-width: 12rem;
             height: 22.5rem;
             border-radius: 0.625rem;
             box-shadow: 0 0.3125rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.25);
             align-items: center;
             position: relative;
+
+            @include tablet {
+                width: 60%;
+                max-width: 16rem;
+            }
 
             &--hawaii {
                 background-image: url(../assets/images/hawaii.jpg);

@@ -85,8 +85,6 @@ p {
     font-weight: 400;
 }
 
-
-
 .nav {
     padding: 1rem 7rem;
     display: flex;
@@ -95,6 +93,14 @@ p {
     position: fixed;
     background-color: $colour-white;
     width: 100%;
+    z-index: 1;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem 5rem;
+    }
 
     &__name {
         font-size: 1.5rem;
@@ -127,22 +133,40 @@ p {
 .footer {
     padding: 1rem 10rem;
     background-color: $colour-offwhite;
-    height: 14rem;
+    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 6rem;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 2rem;
+        height: 54vh;
+        justify-content: space-around;
+        text-align: center;
+        padding: 1rem 5rem;
+    }
 
     &__title {
         font-size: 1.5rem;
         font-weight: 700;
         color: $colour-blue;  
         margin-bottom: 2rem;  
+
+        @include tablet {
+            margin-bottom: 0.5rem;
+        }
     }
 
     &__hours {
         display: flex;
         gap: 2rem;
+
+        @include tablet {
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 
     &__container {
