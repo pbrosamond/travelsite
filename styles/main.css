@@ -183,7 +183,7 @@ p {
 
 .hero {
   background-color: #FEFAF5;
-  padding: 3rem 1.25rem;
+  padding: 8rem 1.25rem 5rem;
   display: flex;
   gap: 1.25rem;
   justify-content: space-around;
