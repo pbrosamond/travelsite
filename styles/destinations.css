@@ -101,6 +101,12 @@ h3 {
   font-weight: 300;
 }
 
+h4 {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #DB7A4E;
+}
+
 p {
   font-size: 1rem;
   font-weight: 400;
@@ -127,4 +133,39 @@ p {
 .nav__link--active {
   border-bottom: 4px solid #DB7A4E;
   padding-bottom: 0.5rem;
+}
+
+.footer {
+  padding: 1rem 10rem;
+  background-color: #FEFAF5;
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+.footer__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #335576;
+  margin-bottom: 2rem;
+}
+.footer__hours {
+  display: flex;
+  gap: 2rem;
+}
+.footer__container {
+  color: #335576;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer__icons {
+  display: flex;
+  gap: 2.5rem;
+  height: 2.6875rem;
+  align-items: end;
+}
+.footer__icon {
+  height: 1.5625rem;
 }/*# sourceMappingURL=destinations.css.map */

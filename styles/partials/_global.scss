@@ -67,6 +67,12 @@ h3 {
     font-weight: 300;
 }
 
+h4 {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: $colour-orange;
+}
+
 p {
     font-size: 1rem;
     font-weight: 400;
@@ -97,6 +103,44 @@ p {
             padding-bottom: 0.5rem;
         }
     }
+}
 
+.footer {
+    padding: 1rem 10rem;
+    background-color: $colour-offwhite;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
 
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $colour-blue;  
+        margin-bottom: 2rem;  
+    }
+
+    &__hours {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__container {
+        color: $colour-blue;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 2.5rem;
+        height: 2.6875rem;
+        align-items: end;
+    }
+    
+    &__icon {
+        height: 1.5625rem;
+    }
 }
