@@ -123,6 +123,9 @@ p {
   padding: 1rem 7rem;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100%;
 }
 .nav__name {
   font-size: 1.5rem;

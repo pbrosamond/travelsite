@@ -89,6 +89,9 @@ p {
     padding: 1rem 7rem;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background-color: $colour-white;
+    width: 100%;
 
     &__name {
         font-size: 1.5rem;
