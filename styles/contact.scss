@@ -35,20 +35,12 @@
         padding: 1rem 1rem;
     }
     
-    &__info {
-        width: 100%;
-    }
-    
     &__details {
         display: flex;
         flex-direction: column;
         gap: 5rem;
         padding-bottom: 0.5rem;
         width: 100%;
-
-        &--destination {
-            padding-bottom: 1rem;
-        }
     }
     
     &__radio {

@@ -210,18 +210,12 @@ p {
   border-radius: 5px;
   padding: 1rem 1rem;
 }
-.contact__info {
-  width: 100%;
-}
 .contact__details {
   display: flex;
   flex-direction: column;
   gap: 5rem;
   padding-bottom: 0.5rem;
   width: 100%;
-}
-.contact__details--destination {
-  padding-bottom: 1rem;
 }
 .contact__radio {
   display: flex;
