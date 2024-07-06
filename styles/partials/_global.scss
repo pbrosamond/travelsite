@@ -1,5 +1,6 @@
-/* Global */
-
+@use "./mixins" as *;
+@use "./variables" as *;
+@use "./fonts" as *;
 /* Reset all elements */
 *,
 *::before,
@@ -12,8 +13,7 @@
 /* Set default font settings for the whole document */
 html {
     font-size: 100%; /* 16px */
-    font-family: 'Open Sans';
-    color: #393939;
+    font-family: 'Open Sans', sans-serif;
     background-color: #fff;
 }
 
@@ -38,7 +38,6 @@ a {
     font-size: 1.3125rem;
     font-weight: 400;
     cursor: pointer;
-    color: #393939;
     width: fit-content;
 }
 
@@ -48,7 +47,7 @@ button {
     color: #fff;
     width: 11.25rem;
     padding: 1.25rem;
-    background-color: #5BACC3;
+    background-color: $colour-orange;
     border: none;
     cursor: pointer;
 }
@@ -71,4 +70,33 @@ h3 {
 p {
     font-size: 1rem;
     font-weight: 400;
+}
+
+.nav {
+    padding: 1rem 7rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $colour-blue;
+    }
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__link {
+        font-size: 1rem;
+        color: $colour-black;
+
+        &--active {
+            border-bottom: 4px solid $colour-orange;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+
 }

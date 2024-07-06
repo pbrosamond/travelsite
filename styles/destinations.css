@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/fonts/OpenSans-Light.ttf") format("truetype"), url("../../assets/fonts/alternative/OpenSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/fonts/OpenSans-Regular.ttf") format("truetype"), url("../../assets/fonts/alternative/OpenSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/fonts/OpenSans-Medium.ttf") format("truetype"), url("../../assets/fonts/alternative/OpenSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/fonts/OpenSans-SemiBold.ttf") format("truetype"), url("../../assets/fonts/alternative/OpenSans-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/fonts/OpenSans-Bold.ttf") format("truetype"), url("../../assets/fonts/alternative/OpenSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../assets/fonts/OpenSans-ExtraBold.ttf") format("truetype"), url("../../assets/fonts/alternative/OpenSans-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+/* Reset all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default font settings for the whole document */
+html {
+  font-size: 100%; /* 16px */
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+}
+
+/* Set body to take up full height and width */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button {
+  font-size: 1.3125rem;
+  font-weight: 400;
+  color: #fff;
+  width: 11.25rem;
+  padding: 1.25rem;
+  background-color: #DB7A4E;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2.0625rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.nav {
+  padding: 1rem 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #335576;
+}
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+.nav__link {
+  font-size: 1rem;
+  color: black;
+}
+.nav__link--active {
+  border-bottom: 4px solid #DB7A4E;
+  padding-bottom: 0.5rem;
+}/*# sourceMappingURL=destinations.css.map */
