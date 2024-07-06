@@ -2,3 +2,73 @@
 @use "./partials/mixins" as *;
 @use "./partials/variables" as *;
 @use "./partials/fonts" as *;
+
+.hero {
+    background-color: $colour-offwhite;
+    padding: 3rem 1.25rem;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-around;
+    align-items: center;
+
+    &__container {
+        width: 34%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__image {
+        height: 20rem;
+    }
+}
+
+.recommendations {
+    padding: 3rem 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #F7F7F7;
+    
+        &__container {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            width: 100%;
+        }
+        
+        &__card {
+            width: 23%;
+            height: 22.5rem;
+            border-radius: 0.625rem;
+            box-shadow: 0 0.3125rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.25);
+            align-items: center;
+            position: relative;
+
+            &--hawaii {
+                background-image: url(../assets/images/hawaii.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            &--iceland {
+                background-image: url(../assets/images/iceland.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            &--greece {
+                background-image: url(../assets/images/greece.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__title {
+            color: $colour-white;
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+        }
+}
+

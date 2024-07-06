@@ -42,7 +42,7 @@ a {
 }
 
 button {
-    font-size: 1.3125rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #fff;
     width: 11.25rem;
@@ -50,16 +50,23 @@ button {
     background-color: $colour-orange;
     border: none;
     cursor: pointer;
+    height: 0.5rem;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    font-size: 3.75rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $colour-blue;
 }
 
 h2 {
-    font-size: 3.75rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $colour-blue;
 }
 
 h3 {
