@@ -7,8 +7,8 @@
     }
   }
 
-  @mixin footer-hours {
-    @media (max-width: 1142px) {
-      @content;
-    }
+@mixin footer-hours {
+  @media (max-width: 1142px) {
+    @content;
   }
+}
