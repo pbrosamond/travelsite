@@ -13,6 +13,8 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 75vh;
+    max-width: 80rem;
+    margin: 0 auto;
 
         &--hawaii {
             background-image: url(../assets/images/hawaii.jpg);

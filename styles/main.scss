@@ -10,6 +10,8 @@
     gap: 1.25rem;
     justify-content: space-around;
     align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
 
     @include tablet {
         flex-direction: column-reverse; 
@@ -45,6 +47,8 @@
     flex-direction: column;
     gap: 2rem;
     background-color: #F7F7F7;
+    max-width: 80rem;
+    margin: 0 auto;
 
     @include tablet {
         justify-content: center;

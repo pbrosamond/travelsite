@@ -119,6 +119,11 @@ p {
   font-weight: 400;
 }
 
+header {
+  width: 80rem;
+  margin: 0 auto;
+}
+
 .nav {
   padding: 1rem 7rem;
   display: flex;
@@ -126,7 +131,7 @@ p {
   align-items: baseline;
   position: fixed;
   background-color: #FFFFFF;
-  width: 100%;
+  width: 80rem;
   z-index: 1;
 }
 @media (max-width: 768px) {
@@ -168,6 +173,8 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 6rem;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
   .footer {
@@ -223,6 +230,8 @@ p {
   gap: 1.25rem;
   justify-content: space-around;
   align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
   .hero {
@@ -258,6 +267,8 @@ p {
   flex-direction: column;
   gap: 2rem;
   background-color: #F7F7F7;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
   .recommendations {
