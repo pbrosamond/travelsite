@@ -85,24 +85,17 @@ p {
     font-weight: 400;
 }
 
-header {
-    max-width: 80rem;
-    margin: 0 auto;
-
-    @include tablet {
-        width: 100%;
-    }
-}
-
 .nav {
     padding: 1rem 7rem;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    position: fixed;
+    // position: fixed;
     background-color: $colour-white;
-    max-width: 80rem;
+    max-width: 100%;
     z-index: 1;
+    margin: 0 auto;
+
 
 
     @include tablet {
@@ -152,13 +145,19 @@ header {
     max-width: 80rem;
     margin: 0 auto;
 
+    @include footer-hours {
+        align-items: baseline;
+        height: fit-content;
+        padding: 4rem 10rem;
+    }
+
     @include tablet {
         flex-direction: column;
         gap: 2rem;
-        height: 54vh;
         justify-content: space-around;
         text-align: center;
-        padding: 1rem 5rem;
+        padding: 4rem 5rem;
+        align-items: center;
     }
 
     &__title {
@@ -176,7 +175,7 @@ header {
         display: flex;
         gap: 2rem;
 
-        @include tablet {
+        @include footer-hours {
             flex-direction: column;
             gap: 1rem;
         }
