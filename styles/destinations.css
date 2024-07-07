@@ -289,7 +289,7 @@ p {
 }
 @media (max-width: 768px) {
   .schedule__card {
-    width: 60%;
+    width: 100%;
     max-width: 16rem;
   }
 }
