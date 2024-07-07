@@ -86,8 +86,12 @@ p {
 }
 
 header {
-    width: 80rem;
+    max-width: 80rem;
     margin: 0 auto;
+
+    @include tablet {
+        width: 100%;
+    }
 }
 
 .nav {
@@ -97,7 +101,7 @@ header {
     align-items: baseline;
     position: fixed;
     background-color: $colour-white;
-    width: 80rem;
+    max-width: 80rem;
     z-index: 1;
 
 
@@ -106,6 +110,7 @@ header {
         gap: 1rem;
         align-items: center;
         padding: 1rem 5rem;
+        width: 100%;
     }
 
     &__name {
