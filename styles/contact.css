@@ -238,10 +238,20 @@ p {
   max-width: 80rem;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 1rem;
+    height: 100%;
+  }
+}
+.contact__form {
+  width: 100%;
+}
 .contact__section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .contact__title {
   color: #FFFFFF;
@@ -253,7 +263,6 @@ p {
   flex-direction: column;
   gap: 1.5rem;
   height: 100%;
-  width: 46rem;
   background-color: #FFFFFF;
   border-radius: 5px;
   padding: 1rem 1rem;
@@ -269,6 +278,12 @@ p {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .contact__radio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .contact__input {
   display: flex;
